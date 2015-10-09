@@ -1,0 +1,97 @@
+/* Comments in CSS exist between / * * /
+*/
+
+body {
+  /* rgb stands for Red Green Blue. The numbers correspond to the respective levels of those
+  colors. Values range between 255 and 0
+  */
+  color: rgb(241,241,241);
+  font-family: helvetica neue;
+  margin: 0;
+  height: 100%;
+}
+
+.aw-main__section {
+  background-color: rgb(41,74,110);
+  background-image: url('./img/my-background.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 85%;
+}
+
+.flex-column {
+  /* see: https://css-tricks.com/snippets/css/a-guide-to-flexbox/;
+    for a full rundown of flexbox
+  */
+  display: flex;
+  /*
+  vertically align the content
+  */
+  align-items: center;
+  /*
+   Renders child items top to bottom
+  */
+  flex-direction: column;
+  /*
+   horizontally align the content
+  */
+  justify-content: center;
+}
+
+
+.aw-main__image {
+  width: 175px;
+  border-radius: 50%;
+}
+
+.aw-main__content {
+  text-align: center;
+}
+
+.aw-resume__section,
+.aw-contact__section {
+  /* Here we are using Hexadecimal values for color instead of rgb. */
+  color: #323232;
+  /* mention we don't want things on the edge of the screen, then padding */
+  /* need to also show how blocks in html go from N E S W */
+  /* put some space inbetween the element border and inner conent */
+  padding: 0 5% 10%;
+}
+
+.aw-resume__skills-wrap {
+  display: flex;
+}
+
+/* Here, don't add the contact title until we make that component. When you do, mention
+how commas work in css */
+.aw-resume__title,
+.aw-contact__title {
+  font-size: 35px;
+}
+
+.aw-resume__skills {
+  /* Tells the items to take up */
+  flex-grow: 1;
+}
+
+.aw-resume__card {
+  /*
+  Notice we can also use certain color names that the browser recognises
+  see here for more: http://www.w3schools.com/html/html_colornames.asp;
+  */
+  border: 1px solid grey;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.aw-contact__section {
+  color: white;
+  background-color: #323232;
+  overflow: hidden;
+}
+
+.aw-contact__link {
+  color: white;
+  font-size: 50px;
+}

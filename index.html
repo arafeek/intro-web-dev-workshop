@@ -1,0 +1,94 @@
+<!-- This is a comment! Comments don't get evaluated by the browser (human readable only)
+In HTML anything between, tags like you see here becomes a comment  -->
+<html>
+  <!-- All HTML must live between <html></html> tags so that the browser knows how to
+  interpret it -->
+  <head>
+    <!-- The title won't display on the page itself, but it'll show up as the title of
+    the browser tab -->
+    <title>Adam's Website</title>
+    <!-- This is a link to our style sheet where all the css lives -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <!-- This is the beginning of the body of the HTML document. Everything between 
+  <body>...</body> will be rendered by the browser. -->
+  <body>
+    <!-- A section spans 100% of the window width -->
+    <section class="aw-main__section flex-column">
+      <div class="aw-main__content">
+        <!-- Here, the image we are refrencing in our `src` lives in the `img` directory
+        The ./img/placehold.jpg refrences the path to this image, relative to the base
+        foler of the project foler -->
+        <img class="aw-main__image" src="./img/placehold.jpg" />
+        <h1>Hello</h1>
+        <p> I'm me and I do things, and sometimes, I do stuff </p>
+        <p> Welcome to my online resume </p>
+      </div>
+    </section>
+
+    <section class="aw-resume__section">
+      <h1 class="aw-resume__title"> Resume </h1>
+
+      <div class="aw-resume__skills-wrap">
+        <!-- We encapsulate both lists in a div so that we can add headings to the list
+        that will render above each list (due to useing display: flex on the parent) -->
+        <div class="aw-resume__skills">
+          <h3 class="aw-resume__sub-title"> Technical Skills </h3>
+          <!-- <ul> Stands for unordered list. By default the browser renders it with
+          bullet points. This doesn't mean it can't be customized though!
+          see: https://css-tricks.com/almanac/properties/l/list-style/
+          to see some of the things you can do to a list -->
+          <ul class="aw-resume__skills-list">
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="aw-resume__skills">
+          <h3 class="aw-resume__sub-title"> Personal Skills </h3>
+          <ul class="aw-resume__skills-list">
+            <li>Public Speaking</li>
+            <li>Punctual</li>
+            <li>Eager to learn new things</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="aw-resume__experience-wrap">
+        <h3> Work Experience </h3>
+        <div class="aw-resume__card">
+          <h4 class="aw-resume__card-title"> Rangle.io - Software Developer (CO - OP)</h4>
+          <div class="aw-resume__card-content">
+            <p>
+              During my time at Rangle.io I worked as a member of a SCRUM team responsible for the development of a mobile application experience for a major e-commerce platform. On a weekly basis I was tasked with, and succeed at delivering (conceptualizing, implementing and testing) core application features. Other responsibilities included attending meetings and regularly interacting with clients to ensure the end product was of the highest quality.
+            </p>
+          </div>
+        </div>
+
+        <div class="aw-resume__card">
+          <h4 class="aw-resume__card-title"> EveryBit - Software Developer (CO - OP)</h4>
+          <div class="aw-resume__card-content">
+            <p>
+            Maintained and extended the functionality of the I.CX encrypted messaging web application through the design and implementation of new features as well as periodic regression testing and code review/ refactoring.
+            Designed the tutorial for the EveryBit.js web encryption platform: http://everybit.com/tutorial.html
+            Successfully generated media attention for the application during launch period
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aw-contact__section">
+      <h1 class="aw-contact__title">Hire me?</h1>
+      <p>Shoot me an email and say hey :)</p>
+      <div class="aw-contact__email">
+        <!-- the <a> here stands for Anchor. Anchor tags are used for different types of links.
+        Here we are using it to trigger sending an email. -->
+        <a href="mailto:adam_rafeek@hotmail.com?Subject=Hello%20There" target="_top"
+          class="aw-contact__link">adam_rafeek@hotmail.com</a>
+      </div>
+    </section>
+  </body>
+</html>
